@@ -16,7 +16,7 @@ export default function ShowcasePage() {
   };
 
   return (
-    <main className="relative min-h-screen w-full bg-[#fafaf9] text-[#0f1b35] flex flex-col items-center overflow-x-hidden" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+    <main className="relative min-h-screen w-full bg-[#f2efeb] text-[#1a1a1a] flex flex-col items-center overflow-x-hidden" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
       {/* Background Texture */}
       <div className="absolute inset-0 opacity-[0.03] mix-blend-multiply pointer-events-none" style={{ backgroundImage: 'url("/noise.png")', backgroundSize: '150px' }} />
 
@@ -91,7 +91,7 @@ export default function ShowcasePage() {
       <AnimatePresence>
         {selectedImage && (
           <motion.div 
-            className="fixed inset-0 z-[200] bg-[#fafaf9]/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
+            className="fixed inset-0 z-[200] bg-[#f2efeb]/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-12 cursor-zoom-out"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

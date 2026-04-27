@@ -15,13 +15,13 @@ function MagneticLink({ children, isEng, href }: { children: React.ReactNode, is
       className="relative cursor-pointer inline-block w-max"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      animate={{ color: isEng ? "rgba(255,255,255,0.7)" : "rgba(15,27,53,0.7)" }}
-      whileHover={{ color: isEng ? "#00e5ff" : "#e07a5f" }}
+      animate={{ color: isEng ? "rgba(255,255,255,0.7)" : "rgba(26,26,26,0.7)" }}
+      whileHover={{ color: isEng ? "#00e5ff" : "#d43f33" }}
     >
       {children}
       <motion.div
         className="absolute -bottom-1 left-0 right-0 h-[1px]"
-        style={{ backgroundColor: isEng ? "#00e5ff" : "#e07a5f" }}
+        style={{ backgroundColor: isEng ? "#00e5ff" : "#d43f33" }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: isHovered ? 1 : 0 }}
         transition={{ duration: 0.3, ease: "easeOut" }}
@@ -42,9 +42,9 @@ export default function ContactSection({ mode }: ContactSectionProps) {
       id="contact"
       className="relative w-full mt-40 py-32 z-50 flex flex-col items-center justify-center min-h-screen border-t"
       style={{
-        backgroundColor: isEng ? "#000000" : "#fafaf9",
+        backgroundColor: isEng ? "#000000" : "#f2efeb",
         borderColor: isEng ? "rgba(255,255,255,0.02)" : "rgba(0,0,0,0.02)",
-        color: isEng ? "#ffffff" : "#0f1b35",
+        color: isEng ? "#ffffff" : "#1a1a1a",
         transition: "background-color 0.8s ease, color 0.8s ease"
       }}
     >
@@ -73,15 +73,15 @@ export default function ContactSection({ mode }: ContactSectionProps) {
             className="text-2xl md:text-4xl border-b-[1px] pb-1 transition-colors duration-300 italic relative z-10"
             style={{
               fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-inter), sans-serif",
-              borderColor: isEng ? "rgba(0,229,255,0.4)" : "rgba(224,122,95,0.4)"
+              borderColor: isEng ? "rgba(0,229,255,0.4)" : "rgba(212,63,51,0.4)"
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.color = isEng ? "#00e5ff" : "#e07a5f";
-              e.currentTarget.style.borderColor = isEng ? "#00e5ff" : "#e07a5f";
+              e.currentTarget.style.color = isEng ? "#00e5ff" : "#d43f33";
+              e.currentTarget.style.borderColor = isEng ? "#00e5ff" : "#d43f33";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.color = "inherit";
-              e.currentTarget.style.borderColor = isEng ? "rgba(0,229,255,0.4)" : "rgba(224,122,95,0.4)";
+              e.currentTarget.style.borderColor = isEng ? "rgba(0,229,255,0.4)" : "rgba(212,63,51,0.4)";
             }}
           >
             hello@rashminda.me

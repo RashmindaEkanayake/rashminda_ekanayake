@@ -14,7 +14,7 @@ export default function AboutSection({ mode }: AboutSectionProps) {
       id="about" 
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden z-20 py-32"
       style={{
-        backgroundColor: isEng ? "#050505" : "#faf9f6",
+        backgroundColor: isEng ? "#050505" : "#f2efeb",
         transition: "background-color 0.8s ease"
       }}
     >
@@ -71,7 +71,7 @@ export default function AboutSection({ mode }: AboutSectionProps) {
               <motion.div
                 className="absolute w-[80vw] h-[80vw] max-w-[900px] max-h-[900px] rounded-full blur-[140px]"
                 style={{
-                  background: "radial-gradient(circle, #ffecd2 0%, #fcb69f 50%, rgba(255,255,255,0) 100%)",
+                  background: "radial-gradient(circle, #f2efeb 0%, #c4a484 30%, rgba(255,255,255,0) 100%)",
                 }}
                 animate={{
                   scale: [1, 1.1, 0.9, 1],
@@ -96,13 +96,13 @@ export default function AboutSection({ mode }: AboutSectionProps) {
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-black flex flex-wrap justify-center items-center gap-x-4 gap-y-2 leading-tight">
           <span 
             className="tracking-tight"
-            style={{ fontFamily: "'JetBrains Mono', monospace", color: isEng ? "#00e5ff" : "#0f1b35" }}
+            style={{ fontFamily: "'JetBrains Mono', monospace", color: isEng ? "#00e5ff" : "#1a1a1a" }}
           >
             Solving with Logic,
           </span>
           <span 
             className="italic tracking-tighter"
-            style={{ fontFamily: "var(--font-playfair), serif", color: isEng ? "#ffffff" : "#e07a5f" }}
+            style={{ fontFamily: "var(--font-playfair), serif", color: isEng ? "#ffffff" : "#d43f33" }}
           >
             Crafting with Emotion.
           </span>
@@ -120,7 +120,7 @@ export default function AboutSection({ mode }: AboutSectionProps) {
               className="text-lg md:text-xl lg:text-2xl leading-relaxed font-light"
               style={{ 
                 fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-inter), sans-serif",
-                color: isEng ? "rgba(255, 255, 255, 0.7)" : "rgba(15, 27, 53, 0.75)"
+                color: isEng ? "rgba(255, 255, 255, 0.7)" : "rgba(26, 26, 26, 0.75)"
               }}
             >
               {isEng 
@@ -137,7 +137,7 @@ export default function AboutSection({ mode }: AboutSectionProps) {
             className="text-sm md:text-base tracking-[0.15em] uppercase font-bold opacity-50"
             style={{ 
               fontFamily: "'JetBrains Mono', monospace",
-              color: isEng ? "#ffffff" : "#0f1b35"
+              color: isEng ? "#ffffff" : "#1a1a1a"
             }}
           >
             The intersection of 0s and 1s with RGB and CMYK.

@@ -76,7 +76,7 @@ export default function HeroSection() {
     <motion.div
       className="relative min-h-screen w-full flex flex-col"
       animate={{
-        backgroundColor: isEng ? "#0b0d10" : "#fafaf9", // Darker gray for SE
+        backgroundColor: isEng ? "#0b0d10" : "#f2efeb", // Ivory for Designer
       }}
       transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
     >
@@ -106,7 +106,7 @@ export default function HeroSection() {
         <motion.div
           className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none select-none"
           style={{ opacity: heroBgOpacity }}
-          animate={{ color: isEng ? "rgba(0, 229, 255, 1)" : "rgba(15, 27, 53, 1)" }}
+          animate={{ color: isEng ? "rgba(0, 229, 255, 1)" : "rgba(18, 18, 18, 1)" }}
         >
           <span
             className="text-[22vw] font-black tracking-tighter whitespace-nowrap"
@@ -132,7 +132,7 @@ export default function HeroSection() {
               <motion.h1
                 className="text-6xl md:text-7xl xl:text-8xl font-black leading-tight tracking-tight"
                 style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif" }}
-                animate={{ color: isEng ? "#ffffff" : "#0f1b35" }}
+                animate={{ color: isEng ? "#ffffff" : "#1a1a1a" }}
               >
                 Rashminda<br />Ekanayake
               </motion.h1>
@@ -153,13 +153,13 @@ export default function HeroSection() {
                       <span className="text-cyan-400/50 text-base mr-1">&gt;&nbsp;</span>
                     )}
                     <motion.span
-                      animate={{ color: isEng ? "rgba(255,255,255,0.88)" : "#0f1b35" }}
+                      animate={{ color: isEng ? "rgba(255,255,255,0.88)" : "#1a1a1a" }}
                       transition={{ duration: 0.6 }}
                     >
                       {lines.slice(0, lineIndex).join(" ")}{" "}
                       {typedText}
                       <span className="cursor-blink inline-block w-0.5 h-6 ml-0.5 align-middle"
-                        style={{ backgroundColor: isEng ? "#00e5ff" : "#e07a5f" }}
+                        style={{ backgroundColor: isEng ? "#00e5ff" : "#d43f33" }}
                       />
                     </motion.span>
                   </motion.div>
@@ -213,9 +213,9 @@ function StatusCard({ mode, label, value, dot }: { mode: Mode, label: string, va
     <motion.div
       className="p-5 border flex flex-col gap-3 relative overflow-hidden group backdrop-blur-md"
       animate={{
-        borderColor: isEng ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.15)",
-        backgroundColor: isEng ? "rgba(255,255,255,0.02)" : "rgba(0,0,0,0.02)",
-        color: isEng ? "#ffffff" : "#0f1b35"
+        borderColor: isEng ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)",
+        backgroundColor: isEng ? "rgba(255,255,255,0.02)" : "rgba(0,0,0,0.01)",
+        color: isEng ? "#ffffff" : "#1a1a1a"
       }}
       whileHover={{ scale: 1.02 }}
     >

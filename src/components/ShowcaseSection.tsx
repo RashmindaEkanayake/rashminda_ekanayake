@@ -35,8 +35,8 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
       id="showcase"
       className="relative w-full min-h-screen py-32 px-8 md:px-16 lg:px-32 z-20 flex flex-col justify-center items-center border-t overflow-hidden"
       style={{
-        backgroundColor: isEng ? "#0b0d10" : "#fafaf9",
-        borderColor: isEng ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)",
+        backgroundColor: isEng ? "#0b0d10" : "#f2efeb",
+        borderColor: isEng ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.05)",
         transition: "background-color 0.8s ease"
       }}
     >
@@ -45,7 +45,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
         <motion.h2
           className="text-4xl md:text-5xl font-black mb-4 tracking-tight"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif" }}
-          animate={{ color: isEng ? "#ffffff" : "#0f1b35" }}
+          animate={{ color: isEng ? "#ffffff" : "#1a1a1a" }}
         >
           Curated Works
         </motion.h2>
@@ -53,7 +53,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
         <motion.p
           className="text-sm tracking-widest font-bold opacity-60"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif", fontStyle: isEng ? "normal" : "italic" }}
-          animate={{ color: isEng ? "#00e5ff" : "#e07a5f" }}
+          animate={{ color: isEng ? "#00e5ff" : "#d43f33" }}
         >
           {isEng ? "// selected_repositories" : "( visual_portfolio )"}
         </motion.p>
@@ -174,13 +174,13 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
               className="px-10 py-4 text-lg italic"
               style={{
                 fontFamily: "var(--font-playfair), serif",
-                color: "#0f1b35",
-                border: "1px solid #0f1b35",
+                color: "#1a1a1a",
+                border: "1px solid #1a1a1a",
                 backgroundColor: "transparent",
               }}
               whileHover={{
-                backgroundColor: "#0f1b35",
-                color: "#ffffff"
+                backgroundColor: "#1a1a1a",
+                color: "#f2efeb"
               }}
               transition={{ duration: 0.4 }}
             >
