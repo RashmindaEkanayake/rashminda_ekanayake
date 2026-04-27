@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
 interface BentoCardsProps {
   mode: "eng" | "des";
@@ -86,13 +86,25 @@ const desCards: CardType[] = [
   },
 ];
 
-const cardVariants = {
+// Added Variants type and 'as const' to the ease array to satisfy TypeScript
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 24, scale: 0.96 },
   visible: (i: number) => ({
-    opacity: 1, y: 0, scale: 1,
-    transition: { delay: i * 0.08, duration: 0.55, ease: [0.25, 0.46, 0.45, 0.94] },
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: i * 0.08,
+      duration: 0.55,
+      ease: [0.25, 0.46, 0.45, 0.94] as const
+    },
   }),
-  exit: { opacity: 0, y: -16, scale: 0.97, transition: { duration: 0.3 } },
+  exit: {
+    opacity: 0,
+    y: -16,
+    scale: 0.97,
+    transition: { duration: 0.3 }
+  },
 };
 
 export default function BentoCards({ mode }: BentoCardsProps) {
@@ -160,7 +172,6 @@ export default function BentoCards({ mode }: BentoCardsProps) {
             {/* Des: Visual Identity mock */}
             {"isVisual" in card && card.isVisual && (
               <div className="flex-1 flex flex-col gap-2">
-                {/* Logo mock */}
                 <div className="flex items-center gap-2">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-br from-amber-300 to-rose-400 flex items-center justify-center text-white text-xs font-bold">R</div>
                   <div className="flex flex-col gap-0.5">
@@ -168,13 +179,11 @@ export default function BentoCards({ mode }: BentoCardsProps) {
                     <div className="w-10 h-1 rounded-full bg-[#d4a574]/40" />
                   </div>
                 </div>
-                {/* Type scale mock */}
                 <div className="flex flex-col gap-1">
                   <div className="w-full h-2 rounded-full bg-[#0f1b35]/12" />
                   <div className="w-3/4 h-1.5 rounded-full bg-[#0f1b35]/8" />
                   <div className="w-1/2 h-1 rounded-full bg-[#0f1b35]/6" />
                 </div>
-                {/* Layout grid mock */}
                 <div className="grid grid-cols-3 gap-1">
                   {[0, 1, 2].map((k) => (
                     <div key={k} className="h-6 rounded bg-gradient-to-b from-[#d4a574]/20 to-[#f7c5b0]/15" />
@@ -187,7 +196,7 @@ export default function BentoCards({ mode }: BentoCardsProps) {
             {/* Des: Colour palette swatches */}
             {"isPalette" in card && card.isPalette && (
               <div className="flex flex-col gap-2">
-                {card.palette.map((c, j) => (
+                {card.palette?.map((c, j) => (
                   <div key={j} className="flex items-center gap-2">
                     <div
                       className="w-5 h-5 rounded-full shrink-0 shadow-sm"
@@ -203,7 +212,6 @@ export default function BentoCards({ mode }: BentoCardsProps) {
             {/* Des: 3D icon placeholder */}
             {"is3D" in card && card.is3D && (
               <div className="flex-1 flex flex-col items-center justify-center gap-3">
-                {/* Geometric 3D placeholder using pure CSS */}
                 <div className="relative w-16 h-16">
                   <motion.div
                     className="absolute inset-0 rounded-xl"
@@ -217,7 +225,7 @@ export default function BentoCards({ mode }: BentoCardsProps) {
                     <div className="w-full h-full flex items-center justify-center text-2xl">◆</div>
                   </motion.div>
                 </div>
-                <p className="text-[9px] text-[#0f1b35]/40 text-center">3D Icon Render<br/>Coming Soon</p>
+                <p className="text-[9px] text-[#0f1b35]/40 text-center">3D Icon Render<br />Coming Soon</p>
               </div>
             )}
 
