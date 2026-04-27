@@ -1,24 +1,24 @@
 export const PORTFOLIO_DATA = {
   engineering: [
     {
-      title: "Distributed_Cache",
-      desc: "A high-throughput, low-latency Redis-like in-memory store built entirely in Go. Implements custom eviction policies and handles millions of concurrent TCP connections efficiently.",
+      title: "Sell For (Bookshop E-commerce Site)",
+      desc: "An online bookstore platform designed to make browsing and purchasing books simple and efficient. It focuses on a smooth user experience, clear navigation, and a streamlined checkout process.",
       repo: "rashminda/d-cache",
       stack: ["Go", "Redis", "TCP"],
       status: "Completed",
-      link: "https://github.com"
+      link: "https://sell-for.vercel.app/"
     },
     {
-      title: "Neural_Net_Core",
-      desc: "A from-scratch matrix computation engine optimized for deep learning. Features automatic differentiation and CUDA integration for accelerated tensor operations.",
+      title: "Atlas Arena (Gaming Community Hub)",
+      desc: "A digital space built for gamers to connect, share content, and engage in events. The platform encourages community interaction through discussions, updates, and collaborative features.",
       repo: "rashminda/nnc",
       stack: ["C++", "CUDA", "Python"],
       status: "In Progress",
-      link: "https://github.com"
+      link: "https://atlas-arena-nine.vercel.app/"
     },
     {
-      title: "Vortex_Protocol",
-      desc: "Decentralized P2P messaging protocol using WebRTC and end-to-end encryption. Built to bypass traditional relay servers for zero-trust environments.",
+      title: "Pet-Care (Mobile Application)",
+      desc: "A mobile application that helps pet owners manage daily care routines. It includes features like reminders, health tracking, and easy organization of pet-related activities.",
       repo: "rashminda/vortex",
       stack: ["Rust", "WebRTC"],
       status: "Completed",
@@ -48,25 +48,25 @@ export const PORTFOLIO_DATA = {
   ],
   design: [
     {
-      title: "fucking test",
-      image: "/projects/your-file-name.jpg",
-      category: "Branding",
+      title: "Cradle of Love",
+      image: "/projects/2.jpg",
+      category: "Vector",
       year: "2025",
       link: "#",
       aspect: "aspect-[3/4]"
     },
     {
-      title: "Vogue Editorial",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
-      category: "Print",
+      title: "Chrome Angel",
+      image: "/projects/art 1.jpg",
+      category: "Vector",
       year: "2024",
       link: "#",
       aspect: "aspect-[4/3]"
     },
     {
-      title: "Kinetic Typography",
-      image: "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1200&auto=format&fit=crop",
-      category: "Motion",
+      title: "Ragna Lorthbrook",
+      image: "/projects/ragna 2.jpg",
+      category: "Vector",
       year: "2024",
       link: "#",
       aspect: "aspect-[3/4]"
