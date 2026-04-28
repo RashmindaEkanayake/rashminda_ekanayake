@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface ShowcaseSectionProps {
   mode: "eng" | "des";
@@ -18,7 +18,7 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
@@ -60,7 +60,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
 
       {/* Grid */}
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-3 gap-12 w-full max-w-6xl mx-auto"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full max-w-6xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -145,7 +145,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
       </motion.div>
       {/* The More CTA Button */}
       <motion.div
-        className="mt-20 flex justify-center w-full"
+        className="mt-32 flex justify-center w-full"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
