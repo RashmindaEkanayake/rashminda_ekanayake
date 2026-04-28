@@ -41,7 +41,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
       }}
     >
       {/* Header */}
-      <div className="text-center mb-20 w-full flex flex-col items-center">
+      <div className="text-center mb-24 w-full flex flex-col items-center">
         <motion.h2
           className="text-4xl md:text-5xl font-black mb-4 tracking-tight"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif" }}
@@ -145,7 +145,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
       </motion.div>
       {/* The More CTA Button */}
       <motion.div
-        className="mt-24 flex justify-center w-full"
+        className="mt-20 flex justify-center w-full"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
