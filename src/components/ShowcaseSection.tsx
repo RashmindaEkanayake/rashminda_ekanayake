@@ -49,6 +49,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
         >
           Curated Works
         </motion.h2>
+        <br></br>
         <motion.p
           className="text-sm tracking-widest font-bold opacity-60"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif", fontStyle: isEng ? "normal" : "italic" }}
@@ -57,6 +58,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
           {isEng ? "// selected_repositories" : "( visual_portfolio )"}
         </motion.p>
       </div>
+
 
       {/* Grid */}
       <motion.div
@@ -143,6 +145,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
           ))
         )}
       </motion.div>
+      <br></br>
       {/* The More CTA Button */}
       <motion.div
         className="mt-32 flex justify-center w-full"
