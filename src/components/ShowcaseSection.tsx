@@ -33,7 +33,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
   return (
     <section
       id="showcase"
-      className="relative w-full min-h-screen py-32 px-8 md:px-16 lg:px-32 z-20 flex flex-col justify-center items-center border-t overflow-hidden"
+      className="relative w-full min-h-screen py-48 px-8 md:px-16 lg:px-32 z-20 flex flex-col justify-center items-center border-t overflow-hidden"
       style={{
         backgroundColor: isEng ? "#0b0d10" : "#f2efeb",
         borderColor: isEng ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.05)",
@@ -41,7 +41,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
       }}
     >
       {/* Header */}
-      <div className="text-center mb-16 w-full flex flex-col items-center">
+      <div className="text-center mb-20 w-full flex flex-col items-center">
         <motion.h2
           className="text-4xl md:text-5xl font-black mb-4 tracking-tight"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif" }}
@@ -49,7 +49,6 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
         >
           Curated Works
         </motion.h2>
-        <br></br>
         <motion.p
           className="text-sm tracking-widest font-bold opacity-60"
           style={{ fontFamily: isEng ? "'JetBrains Mono', monospace" : "var(--font-playfair), serif", fontStyle: isEng ? "normal" : "italic" }}
@@ -143,7 +142,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
             </motion.a>
           ))
         )}
-      </motion.div><br></br><br></br>
+      </motion.div>
       {/* The More CTA Button */}
       <motion.div
         className="mt-24 flex justify-center w-full"

@@ -68,7 +68,7 @@ export default function HeroSection() {
 
   const { scrollY } = useScroll();
   const heroOpacity = useTransform(scrollY, [0, 400], [1, 0]);
-  const heroBgOpacity = useTransform(scrollY, [0, 400], [0.03, 0]);
+  const heroBgOpacity = useTransform(scrollY, [0, 400], [0.02, 0]);
 
   if (!mounted) return null;
 
@@ -104,7 +104,7 @@ export default function HeroSection() {
       <section className="relative w-full h-screen min-h-[700px] flex flex-col pt-[88px] overflow-hidden">
         {/* Large Background Typography (low opacity, pushed back) */}
         <motion.div
-          className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none select-none"
+          className="absolute inset-0 flex items-center justify-center -z-50 pointer-events-none select-none"
           style={{ opacity: heroBgOpacity }}
           animate={{ color: isEng ? "rgba(0, 229, 255, 1)" : "rgba(18, 18, 18, 1)" }}
         >
