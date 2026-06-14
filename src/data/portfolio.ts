@@ -72,25 +72,25 @@ export const PORTFOLIO_DATA = {
       aspect: "aspect-[3/4]"
     },
     {
-      title: "Noir Identity",
-      image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1200&auto=format&fit=crop",
-      category: "Identity",
+      title: "Celestial Echo",
+      image: "/projects/Celestial Echo.jpg",
+      category: "Vector",
       year: "2025",
       link: "#",
       aspect: "aspect-square"
     },
     {
-      title: "Spatial Web",
-      image: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=1200&auto=format&fit=crop",
-      category: "UI/UX",
+      title: "Emerald Isolation",
+      image: "/projects/Emerald Isolation.jpg",
+      category: "Vector",
       year: "2023",
       link: "#",
       aspect: "aspect-[4/3]"
     },
     {
-      title: "Lumina Packaging",
-      image: "https://images.unsplash.com/photo-1634152962476-4b8a00e1915c?q=80&w=1200&auto=format&fit=crop",
-      category: "Packaging",
+      title: "Neon Ascension",
+      image: "/projects/Neon Ascension.jpg",
+      category: "Vector",
       year: "2025",
       link: "#",
       aspect: "aspect-[3/5]"
