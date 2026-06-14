@@ -90,7 +90,7 @@ export default function ContactSection({ mode }: ContactSectionProps) {
         <br></br><br></br>
         {/* Secondary Links Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 mt-32 text-center md:text-left w-full max-w-4xl"
+          className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 mt-32 text-center md:text-left w-full max-w-2xl mx-auto justify-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -112,14 +112,6 @@ export default function ContactSection({ mode }: ContactSectionProps) {
             <h4 className="text-xs tracking-widest font-bold opacity-40 uppercase">Location</h4>
             <p className="text-sm opacity-80 leading-relaxed text-center md:text-left">
               Kandy,<br />Sri Lanka.
-            </p>
-          </div>
-
-          {/* Col 3 */}
-          <div className="flex flex-col items-center md:items-start gap-4">
-            <h4 className="text-xs tracking-widest font-bold opacity-40 uppercase">Availability</h4>
-            <p className="text-sm opacity-80 leading-relaxed text-center md:text-left">
-              Available for<br />new projects.
             </p>
           </div>
         </motion.div>

@@ -62,7 +62,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
 
       {/* Grid */}
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full max-w-6xl mx-auto"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full max-w-6xl mx-auto px-12 py-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -76,7 +76,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
               target="_blank"
               rel="noopener noreferrer"
               variants={cardVariants}
-              className="group relative flex flex-col justify-between p-10 rounded-xl border-[0.5px] border-white/10 backdrop-blur-md overflow-hidden h-full min-h-[320px]"
+              className="group relative flex flex-col justify-between items-center p-12 rounded-xl border-[0.5px] border-white/10 backdrop-blur-md overflow-hidden h-full min-h-[380px] text-center"
               style={{
                 backgroundColor: "rgba(13,17,23,0.6)",
                 fontFamily: "'JetBrains Mono', monospace",
@@ -91,12 +91,15 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
               }}
               transition={{ duration: 0.3 }}
             >
-              <div className="flex flex-col gap-6 relative z-10">
+              <div className="flex flex-col gap-6 relative z-10 px-6">
                 <h3 className="text-2xl font-bold text-white tracking-tight">{project.title}</h3>
                 <p className="text-sm text-white/60 leading-loose">{project.desc}</p>
+                <button className="text-[#00e5ff] text-xs font-bold tracking-widest uppercase hover:text-white transition-colors mt-4">
+                  View Project →
+                </button>
               </div>
 
-              <div className="absolute bottom-8 right-8 flex justify-end z-10">
+              <div className="flex justify-center z-10 mt-auto">
                 <svg className="w-6 h-6 text-[#00e5ff] opacity-40 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
@@ -123,7 +126,7 @@ export default function ShowcaseSection({ mode }: ShowcaseSectionProps) {
               target="_blank"
               rel="noopener noreferrer"
               variants={cardVariants}
-              className="group relative w-full aspect-[4/5] rounded-xl overflow-hidden cursor-pointer bg-[#e5e5e5]"
+              className="group relative w-full aspect-[4/5] rounded-xl overflow-hidden cursor-pointer bg-[#e5e5e5] p-4"
             >
               {/* Image filling card */}
               <img

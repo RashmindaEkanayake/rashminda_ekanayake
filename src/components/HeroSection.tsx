@@ -125,7 +125,7 @@ export default function HeroSection() {
 
           {/* LEFT: Text */}
           <motion.div
-            className="flex-1 lg:w-[35%] px-8 md:px-16 lg:px-32 py-12 flex flex-col justify-center relative"
+            className="flex-1 lg:w-[35%] px-8 md:px-16 lg:px-32 py-12 lg:py-20 flex flex-col justify-center relative"
             style={{ opacity: heroOpacity }}
           >
             <div className="flex flex-col gap-y-6 flex-1 justify-center">
@@ -182,7 +182,7 @@ export default function HeroSection() {
 
           {/* RIGHT: Stats/Socials */}
           <motion.div
-            className="flex-1 lg:w-[25%] px-12 lg:px-24 pb-16 flex flex-col gap-6 justify-center relative"
+            className="flex-1 lg:w-[25%] px-12 lg:px-24 lg:py-20 pb-16 flex flex-col gap-6 justify-center relative"
             style={{ opacity: heroOpacity }}
           >
             <StatusCard mode={mode} label="STATUS" value="Available for work" dot />
